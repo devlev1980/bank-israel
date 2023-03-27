@@ -86,7 +86,7 @@ main.legislation-page {
 /*  margin-block-end: 80px;*/
 /*  position: relative;*/
 /*}*/
-.header-row:after {
+.legislation-page .header-row:after {
   content: "";
   background-image: url("../../images/circles.svg");
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ main.legislation-page {
   background-size: contain;
 }
 
-.header-links {
+.legislation-page .header-links {
   display: flex;
   align-items: center;
 }
@@ -241,8 +241,6 @@ main.legislation-page {
     font: 700 32px "Assistant" !important;
     margin: 10px 0 0 0;
   }
-}
-@media (max-width: 768px) {
   .legislation-page .card-row {
     grid-template-columns: 30px 1fr 80px;
   }
