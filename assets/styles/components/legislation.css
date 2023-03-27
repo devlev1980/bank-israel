@@ -1,4 +1,6 @@
-main {
+@import "main-container.css";
+
+main.legislation-page {
   background-color: #f8f8ff;
   background-image: url("../../../assets/images/bank_israel_bg.png");
   background-repeat: no-repeat;
@@ -6,7 +8,7 @@ main {
   background-position: 0 23%;
 }
 
-.hero {
+.legislation-page .hero {
   background: #fff url("/assets/images/legislation_all.svg") no-repeat top
     left/contain;
   height: 251px;
@@ -14,7 +16,7 @@ main {
   margin-block-end: 80px;
   position: relative;
 }
-.hero:after {
+.legislation-page .hero:after {
   content: "";
   background-image: url("../../images/circles.svg");
   background-repeat: no-repeat;
@@ -26,18 +28,18 @@ main {
   height: 100%;
   background-size: contain;
 }
-.breadcrumbs {
+.legislation-page .breadcrumbs {
   display: flex;
   gap: 8px;
 }
-.breadcrumb {
+.legislation-page .breadcrumb {
   font: 300 16px/1 "Assistant";
   color: var(--main-color);
   text-decoration: none;
   display: flex;
   align-items: center;
 }
-.breadcrumb:after {
+.legislation-page .breadcrumb:after {
   content: "";
   background: transparent url(../../icons/arr-dark-blue.png) no-repeat
     center/contain;
@@ -46,12 +48,12 @@ main {
   margin-right: 8px;
   display: flex;
 }
-.breadcrumb:last-of-type:after {
+.legislation-page .breadcrumb:last-of-type:after {
   background: none;
   margin-right: 0;
 }
 
-.content-contain {
+.legislation-page .content-contain {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -62,13 +64,13 @@ main {
   margin: 0 auto;
 }
 
-.hero .hero-title .h1 {
+.legislation-page .hero .hero-title .h1 {
   font: 700 64px/70px "Assistant";
   color: var(--main-color);
   margin: 32px 0 24px 0;
 }
 
-.main {
+.legislation-page .main {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,67 +105,67 @@ main {
   display: flex;
   align-items: center;
 }
-.breadcrumb {
+.legislation-page .breadcrumb {
   color: var(--main-color);
   font-size: 1.333rem;
   font-weight: 300;
   cursor: pointer;
 }
-.breadcrumb.current {
+.legislation-page .breadcrumb.current {
   font-weight: 600;
 }
-.arrow-left {
+.legislation-page .arrow-left {
   transform: rotate(90deg);
   margin-inline: 13px;
 }
-h1 {
+.legislation-page h1 {
   font-size: 5.333rem;
   font-weight: 700;
   color: var(--main-color);
 }
-.main-container {
+.legislation-page .main-container {
   max-width: 701px;
   margin: 0 auto;
   margin-block-end: 97px;
 }
-.main-container .info-1 {
+.legislation-page .main-container .info-1 {
   display: flex;
   flex-direction: column;
 }
-.info-1 {
+.legislation-page .info-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-block-end: 50px;
 }
-.info-1 h2,
+.legislation-page .info-1 h2,
 .info-1 p {
   color: var(--main-color);
 }
-.info-1 h2 {
+.legislation-page .info-1 h2 {
   font-weight: 700;
   font-size: 32px;
 }
-.info-1 p {
+.legislation-page .info-1 p {
   font-size: 20px;
   font-weight: 600;
 }
-.card-title {
+.legislation-page .card-title {
   color: var(--main-color);
   margin-block-end: 24px;
 }
-.card-title h3 {
+.legislation-page .card-title h3 {
   font-weight: 700;
   font-size: 24px;
 }
-.card-title p {
+.legislation-page .card-title p {
   font-weight: 400;
   font-size: 18px;
   font-family: "Assistant-Regular", sans-serif;
   font-style: normal;
 }
-.card {
+.legislation-page .card {
   max-width: 701px;
   width: 100%;
   max-height: 495px;
@@ -174,7 +176,7 @@ h1 {
   padding-block-start: 24px;
   margin-block-end: 54px;
 }
-.card-header {
+.legislation-page .card-header {
   display: grid;
   grid-template-columns: 1fr 87px;
   padding: 0 32px;
@@ -182,7 +184,7 @@ h1 {
   opacity: 0.5;
   font-size: 14px;
 }
-.card-row {
+.legislation-page .card-row {
   display: grid;
   grid-template-columns: 30px 1fr 100px;
   font-size: 16px;
@@ -191,69 +193,69 @@ h1 {
   padding: 20px;
 }
 
-.card-row:last-child {
+.legislation-page .card-row:last-child {
   border-bottom: 0;
 }
-.card-row > p {
+.legislation-page .card-row > p {
   color: var(--link);
   max-width: 379px;
 }
-.card-row > img {
+.legislation-page .card-row > img {
   width: 20px;
   height: 20px;
 }
 
 @media (max-width: 768px) {
-  .header-row {
+  .legislation-page .header-row {
     height: 136px;
     background-size: cover;
     background-position-x: 50%;
   }
-  .breadcrumbs {
+  .legislation-page .breadcrumbs {
     padding: 0 24px 0 0;
   }
-  .link {
+  .legislation-page .link {
     font-size: 14px;
   }
-  h1 {
+  .legislation-page h1 {
     font-size: 32px;
   }
-  .main-container {
+  .legislation-page .main-container {
     padding: 24px;
   }
-  .info-1 {
+  .legislation-page .info-1 {
     align-items: flex-start;
   }
-  .header-row:after {
+  .legislation-page .header-row:after {
     top: -59px;
     left: 40%;
   }
-}
-@media (max-width: 768px) {
-  .card-row {
-    grid-template-columns: 30px 1fr 80px;
-  }
-  .card-header {
-    padding: 0 23px;
-    grid-template-columns: 1fr 80px;
-  }
-  .card-row > p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px;
-  }
-  .hero {
+  .legislation-page .hero {
     background: #fff url(/assets/images/legislation_all.svg) no-repeat top /
       cover;
     height: unset;
   }
-  .hero .content-contain {
+  .legislation-page .hero .content-contain {
     max-width: 100%;
     padding: 12px 24px 0 24px;
   }
-  .hero-title .h1 {
+  .legislation-page .hero-title .h1 {
     font: 700 32px "Assistant" !important;
     margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .legislation-page .card-row {
+    grid-template-columns: 30px 1fr 80px;
+  }
+  .legislation-page .card-header {
+    padding: 0 23px;
+    grid-template-columns: 1fr 80px;
+  }
+  .legislation-page .card-row > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
   }
 }
