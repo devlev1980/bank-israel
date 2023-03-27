@@ -1,0 +1,59 @@
+@import "files.css";
+
+main {
+  background-position: 0 23%;
+}
+.header-row {
+  background-image: none;
+  background-color: transparent;
+  height: unset;
+  margin-block-end: unset;
+  margin-block-start: 50px;
+}
+.breadcrumbs {
+  padding-inline-start: 236px;
+}
+.arrow-left {
+  transform: rotate(-90deg);
+  margin-inline-start: 13px;
+  margin-inline-end: 0;
+}
+.card {
+  max-height: 520px;
+}
+
+.card-header {
+  grid-template-columns: 33% 15% 28% 24%;
+}
+.card-row {
+  grid-template-columns: 33% 15% 28% 24%;
+  align-items: center;
+  color: var(--main-color);
+}
+.card-row .download-buttons > button.hide {
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .breadcrumbs {
+    padding-inline-start: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    grid-template-columns: 63% 26% 11%;
+  }
+  .card-row {
+    grid-template-columns: 63% 26% 11%;
+    align-items: center;
+    grid-row-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+  }
+  .mobile {
+    display: none;
+  }
+  .link {
+    font-size: 16px;
+  }
+}

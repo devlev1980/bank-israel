@@ -1,0 +1,51 @@
+@import "assets/styles/normalize.css";
+@import "assets/styles/reset.css";
+@import "assets/styles/typography.css";
+@import "assets/styles/variables.css";
+@import "assets/styles/utilities.css";
+@import "assets/styles/colors.css";
+@import "assets/styles/components/header.css";
+@import "assets/styles/components/footer.css";
+
+:root {
+  --main-color: #012155;
+  --bkg-green: rgba(79, 190, 157, 0.3);
+  --bkg-pink-neon: rgba(255, 90, 110, 0.3);
+  --bkg-purple: rgba(160, 163, 255, 0.3);
+  --bkg-pink: rgba(255, 170, 182, 0.3);
+  --bkg-blue-neon: rgba(0, 212, 255, 0.3);
+  --bkg-cream: rgba(255, 199, 133, 0.3);
+  --bkg-lila: rgba(206, 173, 224, 0.3);
+  --bkg-blue: rgba(0, 136, 255, 0.3);
+  --green: #4fbe9d;
+  --pink-neon: #ff5a6e;
+  --purple: #a0a3ff;
+  --pink: #ffaab6;
+  --blue-neon: #00d4ff;
+  --cream: #ffc785;
+  --lila: #ceade0;
+  --blue: #0088ff;
+  --link: #3d69ff;
+  --white: #fff;
+  --border-color: #c5d2ff;
+  --version-bg: #edeeff;
+  --date-color: #2a4570;
+  --date-line: #657ed4;
+
+  --bkg-green-o12: rgba(81, 191, 158, 0.12);
+  --bkg-pink-neon-o12: rgba(255, 90, 110, 0.12);
+  --bkg-purple-o12: rgba(160, 163, 255, 0.12);
+  --bkg-pink-o12: rgba(255, 170, 182, 0.12);
+  --bkg-blue-neon-o12: rgba(0, 212, 255, 0.12);
+  --bkg-cream-o12: rgba(255, 199, 133, 0.12);
+  --bkg-lila-o12: rgba(206, 173, 224, 0.12);
+  --bkg-blue-o12: rgba(0, 136, 255, 0.12);
+}
+
+html {
+}
+body {
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  background-color: #f8f8ff;
+}

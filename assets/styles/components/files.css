@@ -1,0 +1,79 @@
+@import "legislation.css";
+
+main {
+  background-position: 0 10%;
+}
+.hero {
+  background: #fff url("/assets/images/files_bg.svg") no-repeat top left/contain;
+  height: 251px;
+  min-width: 100%;
+  margin-block-end: 80px;
+}
+
+.main-container {
+  padding-block-end: calc(4% + 100px);
+}
+.card-header {
+  grid-template-columns: 33% 15% 11% 24% 17%;
+}
+.card-row {
+  grid-template-columns: 33% 15% 11% 24% 17%;
+  align-items: center;
+  color: var(--main-color);
+}
+.card-row > .row-col {
+  display: flex;
+  align-items: center;
+}
+.download-buttons {
+  align-items: stretch;
+}
+.card-row > div:first-child > img {
+  margin-inline-end: 10px;
+}
+.card-row .download-buttons > button:last-of-type {
+  position: relative;
+  top: 1px;
+}
+.version {
+  background: var(--version-bg);
+  width: 17px;
+  min-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.link-container {
+  color: var(--link);
+}
+@media (max-width: 768px) {
+  .card-header {
+    grid-template-columns: 63% 26% 11%;
+  }
+  .card-row {
+    grid-template-columns: 63% 26% 11%;
+    align-items: center;
+    grid-row-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+  }
+  .mobile {
+    display: none;
+  }
+  .card-row > .row-col {
+    white-space: nowrap;
+  }
+  .hero {
+    background: #fff url(/assets/images/files_bg.svg) no-repeat top / cover;
+    height: unset;
+  }
+  .hero .content-contain {
+    max-width: 100%;
+    padding: 12px 24px 0 24px;
+  }
+  .hero-title .h1 {
+    font: 700 32px "Assistant" !important;
+    margin: 10px 0 0 0;
+  }
+}
