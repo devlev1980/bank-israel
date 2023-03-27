@@ -3,15 +3,22 @@
 main {
   background-position: 0 23%;
 }
-.header-row {
-  background-image: none;
-  background-color: transparent;
-  height: unset;
-  margin-block-end: unset;
-  margin-block-start: 50px;
+.content-contain {
+  margin-block-end: 72px;
 }
+
 .breadcrumbs {
   padding-inline-start: 236px;
+}
+.breadcrumb:last-of-type:before {
+  content: "";
+  background: transparent url(../../icons/arr-dark-blue.png) no-repeat
+    center/contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+  transform: rotate(180deg);
 }
 .arrow-left {
   transform: rotate(-90deg);
@@ -41,6 +48,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .content-contain {
+    margin-block-end: 32px;
+  }
   .card-header {
     grid-template-columns: 63% 26% 11%;
   }
