@@ -1,8 +1,8 @@
-@import "../../styles/typography.css";
+/*@import "../../styles/typography.css";*/
 
-@import "archive_and_drafts.css";
+/*@import "archive_and_drafts.css";*/
 
-main {
+main.messages-page {
   background-image: url("../../images/messages_and_ads_bg.png");
   background-size: cover;
 }
@@ -10,29 +10,114 @@ main {
   margin-block-end: 50px !important;
 }
 
-.card-title h3 {
+.messages-page .content-contain {
+  margin-block-end: 72px;
+  margin-block-start: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: flex-start;
+  max-width: 1440px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.messages-page .breadcrumbs {
+  display: flex;
+  gap: 8px;
+}
+.messages-page .breadcrumb {
+  font: 300 16px/1 "Assistant" !important;
+  color: var(--main-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.messages-page .breadcrumb.current {
+  font-weight: 600 !important;
+}
+.messages-page .breadcrumb:after {
+  content: "";
+  background: transparent url(../../icons/arr-dark-blue.png) no-repeat
+    center/contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+}
+.messages-page .breadcrumb:last-of-type:after {
+  background: none;
+  margin-right: 0;
+}
+
+.messages-page .content-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: flex-start;
+  max-width: 1440px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+.messages-page .hero-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.messages-page .hero-title .h1 {
+  font: 700 40px "Assistant" !important;
+  margin: 10px 0 0 0;
+  color: var(--main-color);
+}
+
+.messages-page .card-title {
+  color: var(--main-color);
+  margin-block-end: 24px;
+}
+
+.messages-page .card-title h3 {
   display: flex;
   justify-content: center;
   font-size: 40px;
   margin-block-end: 48px;
 }
-.card {
+
+.messages-page .main-container {
+  padding-block-end: calc(4% + 100px);
+  max-width: 701px;
+  margin: 0 auto;
+  margin-block-end: 97px;
+}
+
+.messages-page .card {
   padding: 24px;
   border-radius: 4px 24px 4px 24px;
+  max-width: 701px;
+  width: 100%;
+  max-height: 495px;
+  background: var(--white);
+  box-shadow: 0px 4px 20px 0px #0129690f;
+  overflow: auto;
+  padding-block-start: 24px;
+  margin-block-end: 24px;
 }
-.card > h3 {
+.messages-page .card > h3 {
   color: var(--main-color);
   font-size: 18px;
   font-weight: 700;
   margin-block-end: 6px;
 }
-.card-date {
+.messages-page .card-date {
   color: var(--date-color);
   font-size: 16px;
   font-weight: 600;
   position: relative;
 }
-.card-date:before {
+.messages-page .card-date:before {
   content: "";
   position: relative;
   width: 3px;
@@ -41,11 +126,11 @@ main {
   height: 12px;
   margin-inline-end: 3px;
 }
-.card > p {
+.messages-page .card > p {
   font-size: 14px;
   color: var(--main-color);
 }
-.actions {
+.messages-page .actions {
   margin-block-start: 26px;
   display: flex;
   align-items: center;
@@ -53,16 +138,16 @@ main {
   font-size: 18px;
   color: var(--link);
 }
-.actions > .download-btn {
+.messages-page .actions > .download-btn {
   display: flex;
   align-items: flex-end;
   font-size: 18px;
 }
-.actions > .download-btn > img {
+.messages-page .actions > .download-btn > img {
   margin-inline-end: 11px;
 }
 
-.actions > .link-btn > img {
+.messages-page .actions > .link-btn > img {
   width: 20px;
   height: 20px;
   position: relative;
@@ -75,7 +160,15 @@ main {
   }
 }
 @media (max-width: 768px) {
-  .card-title h3 {
+  .messages-page .hero-title {
     justify-content: flex-start;
+    padding: 0 24px;
+  }
+  .messages-page .main-container {
+    padding: 24px;
+  }
+  .messages-page .hero-title .h1 {
+    font: 700 32px "Assistant" !important;
+    margin: 10px 0 0 0;
   }
 }

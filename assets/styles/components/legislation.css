@@ -31,7 +31,7 @@ main.legislation-page {
   gap: 8px;
 }
 .legislation-page .breadcrumb {
-  font: 300 16px/1 "Assistant";
+  font: 300 16px/1 "Assistant" !important;
   color: var(--main-color);
   text-decoration: none;
   display: flex;
