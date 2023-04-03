@@ -67,6 +67,7 @@ main.messages-page {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-block-end: 48px;
 }
 .messages-page .hero-title .h1 {
   font: 700 40px "Assistant" !important;
@@ -163,6 +164,7 @@ main.messages-page {
   .messages-page .hero-title {
     justify-content: flex-start;
     padding: 0 24px;
+    margin-block-end: 56px;
   }
   .messages-page .main-container {
     padding: 24px;

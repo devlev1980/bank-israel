@@ -144,6 +144,10 @@ main.files-page {
 }
 .files-page .download-buttons {
   align-items: stretch;
+  column-gap: 10%;
+}
+.files-page .download-buttons .v-spreader {
+  display: none;
 }
 .files-page .card-row > div:first-child > img {
   margin-inline-end: 10px;
@@ -198,5 +202,15 @@ main.files-page {
   .files-page .hero-title .h1 {
     font: 700 32px "Assistant" !important;
     margin: 10px 0 0 0;
+  }
+  .files-page .link-container {
+    position: relative;
+    right: 26%;
+  }
+  .files-page .download-buttons .v-spreader {
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #ccd3dd;
   }
 }
